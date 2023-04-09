@@ -27,7 +27,7 @@ for file in files:
 for sub in subs:
     os.remove(sub)
 
-# remove every COMANDO file
+# remove every other file that is not a episode file
 for file in all_files:
-    if "COMANDO" in file:
+    if file not in files:
         os.remove(file)
